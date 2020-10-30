@@ -11,10 +11,10 @@ def OneD_Collison(m1,v1,m2,v2,e):
             solution.append("{:.2f}".format(sol[i][j]))
     for i in range(len(solution)):
         solution[i]=float(solution[i])
-    solution.remove(v1)
+    solution.remove(v1)                 #removing cases
     solution.remove(v2)
     ans= "first mass moving {} m/s and second mass moving {} m/s after collision".format(solution[0],solution[1])
 
 
     print(ans)
-OneD_Collison(6,8,4,3,1)
+OneD_Collison(6,8,4,3,1)     #example value
